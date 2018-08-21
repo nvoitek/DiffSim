@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiffSimApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Closing="Window_Closing"
+        Title="Diffraction Simulation" Height="350" Width="525">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" IsMainMenu="True">
+            <MenuItem Header="File">
+                <MenuItem Header="Quit" Click="Quit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Sample">
+                <MenuItem Header="Load Sample" Click="LoadSample_Click"/>
+            </MenuItem>
+            <MenuItem Header="Simulation">
+                <MenuItem Header="Start Simulation" Click="StartSimulation_Click" IsEnabled="{Binding CanStart}"/>
+                <MenuItem Header="Stop Simulation" Click="StopSimulation_Click" IsEnabled="{Binding InProgress}"/>
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <ProgressBar Height="30" Width="200" IsIndeterminate="False" Minimum="0" Maximum="100" Value="{Binding Progress, UpdateSourceTrigger=PropertyChanged}"/>
+        </Grid>
+    </DockPanel>
 </Window>

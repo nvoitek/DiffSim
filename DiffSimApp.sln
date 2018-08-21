@@ -4,17 +4,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiffSimApp", "DiffSimApp\DiffSimApp.csproj", "{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21DD64DF-3129-454D-8F09-D105DE4BFF7A} = {21DD64DF-3129-454D-8F09-D105DE4BFF7A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DiffSimDll", "DiffSimDll\DiffSimDll.vcxproj", "{21DD64DF-3129-454D-8F09-D105DE4BFF7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Debug|x64.Build.0 = Debug|Any CPU
+		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Debug|x86.Build.0 = Debug|Any CPU
 		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Release|x64.ActiveCfg = Release|Any CPU
+		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Release|x64.Build.0 = Release|Any CPU
+		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Release|x86.ActiveCfg = Release|Any CPU
+		{CDFAE9FA-996D-48FD-9DA9-788678BFBB00}.Release|x86.Build.0 = Release|Any CPU
+		{21DD64DF-3129-454D-8F09-D105DE4BFF7A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{21DD64DF-3129-454D-8F09-D105DE4BFF7A}.Debug|x64.ActiveCfg = Debug|x64
+		{21DD64DF-3129-454D-8F09-D105DE4BFF7A}.Debug|x64.Build.0 = Debug|x64
+		{21DD64DF-3129-454D-8F09-D105DE4BFF7A}.Debug|x86.ActiveCfg = Debug|Win32
+		{21DD64DF-3129-454D-8F09-D105DE4BFF7A}.Debug|x86.Build.0 = Debug|Win32
+		{21DD64DF-3129-454D-8F09-D105DE4BFF7A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{21DD64DF-3129-454D-8F09-D105DE4BFF7A}.Release|x64.ActiveCfg = Release|x64
+		{21DD64DF-3129-454D-8F09-D105DE4BFF7A}.Release|x64.Build.0 = Release|x64
+		{21DD64DF-3129-454D-8F09-D105DE4BFF7A}.Release|x86.ActiveCfg = Release|Win32
+		{21DD64DF-3129-454D-8F09-D105DE4BFF7A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
